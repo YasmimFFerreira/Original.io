@@ -1,0 +1,213 @@
+#page-auth {
+    width: 1280px;
+    height: 1788px;
+
+    background: #FFFFFF;
+
+
+    .logo-content {
+        position: absolute;
+        width: 148px;
+        height: 34px;
+        left: 619px;
+        top: 26px;
+    }
+
+    header {
+
+        display: flex;
+        position: absolute;
+        height: 50px;
+        width: 1280;
+        left: 1px;
+        top: 50px;
+        display: flex;
+        align-items: center;
+        border-top-right-radius: 1px solid #0b0c0c;
+
+
+
+
+
+
+        .acesso {
+            position: absolute;
+            width: 147px;
+            height: 36px;
+            left: 40px;
+            top: 58px;
+        }
+
+        .itens {
+            position: absolute;
+            height: 36px;
+            width: 754px;
+            left: 263px;
+            top: 58px;
+            right: 263;
+        }
+
+        .busca {
+            position: absolute;
+            left: 1092px;
+            top: 62px;
+            bottom: 0%;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        .sacola {
+            position: absolute;
+            left: 1201px;
+            top: 62px;
+            right: 3.57%;
+            bottom: 7.14%;
+        }
+    }
+
+    menu {
+
+        display: flex;
+
+
+        .img1 {
+            height: 45px;
+            width: 82px;
+            display: flex;
+            position: absolute;
+            top: 212px;
+            left: 55px;
+            bottom: 7.11%;
+        }
+
+        .seta1 {
+            display: flex;
+            position: absolute;
+            top: 271px;
+            left: 65px;
+        }
+
+        .img2 {
+            height: 82.3px;
+            width: 94.2px;
+            display: flex;
+            position: absolute;
+            top: 297px;
+            left: 40px;
+            bottom: 7.11%;
+        }
+
+        .img3 {
+            height: 82.3px;
+            width: 94.2px;
+            display: flex;
+            position: absolute;
+            top: 400px;
+            left: 40px;
+            bottom: 7.11%;
+        }
+
+        .img4 {
+            height: 82.3px;
+            width: 94.2px;
+            display: flex;
+            position: absolute;
+            top: 503px;
+            left: 40px;
+            bottom: 7.11%;
+        }
+
+        .img5 {
+            height: 82.3px;
+            width: 94.2px;
+            display: flex;
+            position: absolute;
+            top: 607px;
+            left: 40px;
+            bottom: 7.11%;
+        }
+
+        .seta4 {
+            display: flex;
+            position: absolute;
+            top: 710px;
+            left: 65px;
+
+        }
+
+
+        .principal {
+            position: absolute;
+            left: 178px;
+            top: 184px;
+            bottom: 17.87%;
+        }
+
+        aside {
+            display: flex;
+            position: absolute;
+            top: 184px;
+            left: 714px;
+            width: 444px;
+            height: 533px;
+            border: 2px solid #D2E1DF;
+            border-radius: 3px;
+        }
+    }
+
+    main {
+        position: absolute;
+        top: 897px;
+        left: 40px;
+        bottom: 7.11%;
+
+        .images {
+            height: 374.3px;
+            width: 290.2px;
+            display: flex;
+        }
+
+
+    }
+
+    h1 {
+        left: 437px;
+        top: 844px;
+        bottom: 7.11%;
+        display: flex;
+        position: absolute;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 38px;
+        color: #DE8F75;
+    }
+
+    h3 {
+        height: 36px;
+        width: 70px;
+        left: 605px;
+        top: 1319px;
+        position: absolute;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        display: flex;
+
+        color: #2A5A75;
+
+    }
+
+
+}
