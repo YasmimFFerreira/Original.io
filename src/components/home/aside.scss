@@ -1,0 +1,122 @@
+#home-aside {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 90%;
+    width: 47%;
+    top: 20%;
+    left: 3%;
+
+    @mixin imgs {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 23%;
+        width: 23%;
+        left: 0%;
+        margin-top: 5%;
+        opacity: 0.5;
+    }
+
+    @mixin text01 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        color: #686868;
+    }
+
+    @mixin text02 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        color: #686868;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        @include text01;
+        opacity: 0.7;
+        line-height: 17.55px;
+        font-size: 12px;
+
+        .home02 {
+            font-size: 12px;
+            @include text02;
+            color: #686868;
+            line-height: 19.6px;
+            opacity: 0.5;
+        }
+    }
+
+    .text02 {
+        position: relative;
+        @include text01;
+        font-size: 12px;
+        line-height: 18px;
+        color: #DE8F75;
+        top: 5%;
+        left: 3%;
+        width: 70%;
+    }
+
+
+
+    .container {
+        position: absolute;
+        left: 0%;
+        top: 7%;
+        display: flex;
+        flex-direction: column;
+
+        .img02 {
+            @include imgs;
+            overflow: hidden;
+            max-height: 40px;
+            transform: translatey(25%);
+        }
+
+        .play {
+            top: 5.5%;
+            left: 6.5%;
+            display: flex;
+            position: absolute;
+        }
+
+        .seta1 {
+            top: 13%;
+            left: 9.5%;
+            margin-top: 7%;
+            width: 6%;
+            display: flex;
+            position: relative;
+        }
+
+        .img03 {
+            @include imgs;
+            opacity: 1;
+        }
+
+        .img01 {
+            @include imgs;
+        }
+    }
+
+    .seta4 {
+        top: 30%;
+        left: 9.5%;
+        width: 6%;
+        margin-top: 5%;
+        display: flex;
+        position: relative;
+    }
+
+    main {
+        height: 105%;
+        width: 105%;
+        left: 25%;
+        position: relative;
+        display: flex;
+    }
+}

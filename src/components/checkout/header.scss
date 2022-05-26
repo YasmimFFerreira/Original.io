@@ -1,0 +1,41 @@
+#checkout-header {
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    height: 100vh;
+    width: 40%;
+
+    @mixin text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    h1 {
+        left: 90%;
+        top: 1%;
+        position: relative;
+        height: 16.333324432373047px;
+        width: 16.33333396911621px;
+        filter: opacity(0.4);
+        filter: color(#5F75AA);
+    }
+
+    h2 {
+        position: absolute;
+        top: 4%;
+        left: 5%;
+        @include text;
+        font-size: 26px;
+        color: #DE8F75;
+
+        p {
+            @include text;
+            font-size: 18px;
+            color: #AEB6C1;
+            position: relative;
+            top: 2%;
+        }
+    }
+}

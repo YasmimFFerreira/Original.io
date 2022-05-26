@@ -1,0 +1,18 @@
+#checkout-section {
+    position: absolute;
+    background: rgba(32, 32, 32, 0.6);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: stretch;
+
+    .box {
+        display: flex;
+        position: relative;
+        top: 0%;
+        left: 60%;
+        height: 100vh;
+        width: 40%;
+        background: #F2F2F2;
+    }
+}

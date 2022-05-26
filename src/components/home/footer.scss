@@ -1,0 +1,224 @@
+#home-footer {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 49%;
+    top: 225%;
+    left: 0%;
+    border-top: 2px solid #AEB6C1;
+
+    .ellipse {
+        height: 293px;
+        width: 293px;
+        box-sizing: border-box;
+        position: absolute;
+        background: #FFFFFF;
+        border: 2px solid #AEB6C1;
+        left: 956px;
+        display: inline-block;
+        border-radius: 50%;
+        top: -104px;
+
+        P {
+            position: relative;
+            top: 39px;
+            font-family: "Montserrat";
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #000000;
+        }
+
+        .nome {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            display: flex;
+            color: rgba(32, 32, 32, 0.5);
+            border-top: 2px solid #AEB6C1;
+            position: relative;
+            left: 38px;
+            max-height: 216px;
+            width: 216px;
+            top: 90px;
+        }
+
+        .email {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            display: flex;
+            color: rgba(32, 32, 32, 0.5);
+            border-top: 2px solid #AEB6C1;
+            position: relative;
+            left: 38px;
+            max-height: 216px;
+            width: 216px;
+            top: 145px;
+        }
+
+        .enviar {
+            height: 51px;
+            width: 110px;
+            left: 90px;
+            top: 150px;
+            position: relative;
+            background: #DE8F75;
+            border: 0px;
+
+            .env {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 23px;
+                display: flex;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                text-align: center;
+                align-items: center;
+                left: 30px;
+                position: relative;
+            }
+        }
+
+    }
+
+    .faceb {
+        position: absolute;
+        display: flex;
+        height: 25px;
+        width: 12px;
+        left: 70px;
+        top: 30px;
+        height: 25px;
+    }
+
+    .insta {
+        position: absolute;
+        display: flex;
+        height: 25px;
+        width: 12px;
+        left: 100px;
+        top: 30px;
+        height: 25px;
+    }
+
+    .pint {
+        position: absolute;
+        display: flex;
+        height: 25px;
+        width: 12px;
+        left: 140px;
+        top: 30px;
+        height: 25px;
+    }
+
+    .vtex {
+        position: relative;
+        height: 58px;
+        width: 92px;
+        left: 75px;
+        top: 100px;
+    }
+
+    .selo {
+        position: relative;
+        height: 58px;
+        width: 54px;
+        left: 95px;
+        top: 100px;
+    }
+
+    .infos {
+        position: absolute;
+        left: 275px;
+        top: 60px;
+        word-spacing: 110px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 19.61px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #AEB6C1;
+    }
+
+    .info01 {
+        position: absolute;
+        left: 275px;
+        top: 85px;
+        display: inline;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left;
+        color: #202020;
+    }
+
+    .info02 {
+        position: absolute;
+        left: 510px;
+        top: 85px;
+        display: inline;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left;
+        color: #202020;
+    }
+
+    .info03 {
+        position: absolute;
+        left: 735px;
+        top: 85px;
+        display: inline;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left;
+        color: #202020;
+    }
+
+    .rodape {
+        position: absolute;
+        display: flex;
+        top: 243px;
+        left: 0px;
+        height: 20%;
+        width: 100%;
+        background: #DE8F75;
+    }
+
+    h5 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 60px;
+        color: #FFFFFF;
+        word-wrap: break-word;
+        max-width: 680px;
+        position: relative;
+        left: 230px;
+        letter-spacing: 0.5px;
+    }
+}

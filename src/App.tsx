@@ -1,15 +1,12 @@
-import { BrowserRouter, Route } from 'react-router-dom'
-import { Catalog } from "./pages/Catalog";
-import { Compra } from "./pages/Compra";
-import { Cart } from "./pages/Cart";
+import React from 'react';
+import { ProductProvider } from './context';
+import { AppRoutes } from './routes';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Route path="/" exact component={Catalog} />
-      <Route path="/compra" component={Compra} />
-      <Route path="/cart" component={Cart} />
-    </BrowserRouter>
+    <ProductProvider>
+      <AppRoutes />
+    </ProductProvider>
   );
 }
 

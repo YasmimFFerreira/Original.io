@@ -1,0 +1,150 @@
+#home-menu {
+    height: 87%;
+    width: 95%;
+    left: 2%;
+    top: 125%;
+    position: absolute;
+    display: flex;
+
+    @mixin text01 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        color: #252525;
+    }
+
+    @mixin padrão02 {
+        border-radius: 50%;
+        height: 4%;
+        width: 7%;
+        bottom: 56.07%;
+        border: 0px;
+        position: relative;
+    }
+
+    @mixin padrãoImg {
+        position: relative;
+        margin-left: 10px;
+        top: 7%;
+        left: -1%;
+        height: 70%;
+        width: 60%;
+    }
+
+    h1 {
+        @include text01;
+        font-size: 26px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 0%;
+        left: 37%;
+        color: #DE8F75;
+        display: flex;
+        width: 30%;
+        height: 10%;
+    }
+
+    p {
+        display: flex;
+        text-decoration: none;
+        @include text01;
+    }
+
+    .cores02 {
+        display: inline;
+        flex-direction: row;
+        position: relative;
+        left: 130%;
+        top: 51%;
+
+        .rosa {
+            background: #A9095E;
+            @include padrão02;
+        }
+
+        .azul {
+            left: 2px;
+            background: #2A5A75;
+            @include padrão02;
+        }
+
+        .marron {
+            left: 4px;
+            background: #A14830;
+            @include padrão02;
+        }
+
+        .preto {
+            left: 8px;
+            background: #000000;
+            @include padrão02;
+        }
+    }
+
+    .img3 {
+        @include padrãoImg;
+    }
+
+    .img2 {
+        @include padrãoImg;
+    }
+
+    .img1 {
+        @include padrãoImg;
+    }
+
+    .img4 {
+        @include padrãoImg;
+    }
+
+    h2 {
+        height: 35px;
+        width: 10%;
+        left: -55%;
+        top: 87%;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .seta8 {
+            height: 8.644995689392097px;
+            width: 14.000000000000012px;
+            left: -23px;
+            position: relative;
+            top: -9px;
+        }
+    }
+
+    h4 {
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: center;
+        left: 45%;
+        top: 87%;
+        width: 10%;
+        height: 5%;
+        position: absolute;
+        color: #2A5A75;
+    }
+
+    h3 {
+        height: 35px;
+        width: 10%;
+        left: -40%;
+        top: 87%;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .seta9 {
+            height: 8.644995689392097px;
+            width: 14.000000000000012px;
+            left: -20px;
+            position: relative;
+            top: -5px;
+        }
+    }
+}

@@ -1,0 +1,194 @@
+#checkout-main {
+    display: flex;
+    position: absolute;
+    top: 12%;
+    left: 60%;
+    border-top: 1px solid #AEB6C1;
+    top: 12%;
+    width: 37%;
+    height: 60%;
+    left: 62%;
+    align-items: stretch;
+
+    @mixin imgs {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 15%;
+        width: 15%;
+        left: 0%;
+        margin-top: 6%;
+    }
+
+    @mixin menos {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 10px;
+        width: 10px;
+        border: 0px;
+        margin-top: 650%;
+        filter: opacity(0.4);
+        filter: color(#5F75AA);
+    }
+
+    @mixin mais {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 10px;
+        width: 10px;
+        margin-top: 657%;
+        border: 0px;
+        filter: opacity(0.4);
+        filter: color(#5F75AA);
+    }
+
+    .container {
+        position: absolute;
+        left: 0%;
+        top: 3%;
+        display: flex;
+        flex-direction: column;
+
+        .img01 {
+            @include imgs;
+
+        }
+
+        .img02 {
+            @include imgs;
+
+        }
+
+        .img03 {
+            @include imgs;
+
+        }
+
+        .img04 {
+            @include imgs;
+
+        }
+
+        .img05 {
+            @include imgs;
+
+        }
+    }
+
+    menu {
+        position: absolute;
+        left: 25%;
+        top: 0%;
+        display: flex;
+        flex-direction: column;
+
+        @mixin text02 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            color: #202020;
+            margin-top: 48%;
+        }
+
+        @mixin text03 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            color: #000000;
+        }
+
+        .valor {
+            @include text03;
+
+            p {
+                @include text02;
+            }
+        }
+    }
+
+    .menos {
+        position: relative;
+        left: 70%;
+        top: -2%;
+        display: flex;
+        flex-direction: column;
+
+        .menos1 {
+            @include menos;
+
+        }
+
+        .menos2 {
+            @include menos;
+        }
+
+        .menos3 {
+            @include menos;
+        }
+
+        .menos4 {
+            @include menos;
+        }
+
+        .menos5 {
+            @include menos;
+        }
+    }
+
+    h3 {
+        position: absolute;
+        left: 75%;
+        top: -3%;
+        display: flex;
+        flex-direction: column;
+
+        .quant {
+
+            @mixin text02 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #5F75AA;
+                margin-top: 420%;
+            }
+
+            p {
+                @include text02;
+            }
+        }
+    }
+
+    .mais {
+        position: relative;
+        left: 80%;
+        top: -3%;
+        display: flex;
+        flex-direction: column;
+
+        .mais1 {
+            @include mais;
+        }
+
+        .mais2 {
+            @include mais;
+        }
+
+        .mais3 {
+            @include mais;
+        }
+
+        .mais4 {
+            @include mais;
+        }
+
+        .mais5 {
+            @include mais;
+        }
+    }
+}
