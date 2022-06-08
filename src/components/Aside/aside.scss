@@ -1,18 +1,19 @@
-#home-aside {
+#aside {
     display: flex;
     flex-direction: column;
     position: absolute;
-    height: 90%;
+    height: 40%;
     width: 47%;
-    top: 20%;
+    top: 10%;
     left: 3%;
+    border: 2px solid #D2E1DF;
 
     @mixin imgs {
         position: relative;
         display: flex;
         flex-direction: column;
-        height: 23%;
-        width: 23%;
+        height: 18%;
+        width: 18%;
         left: 0%;
         margin-top: 5%;
         opacity: 0.5;

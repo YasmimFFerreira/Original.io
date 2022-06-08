@@ -1,10 +1,10 @@
-#home-article {
+#info {
     flex-direction: column;
-    height: 82%;
+    height: 40%;
     width: 38%;
     left: 55%;
-    top: 28%;
-    position: absolute;
+    top: 11%;
+    position: relative;
     display: flex;
     border: 2px solid #D2E1DF;
     border-radius: 3px;
@@ -24,15 +24,27 @@
     }
 
     @mixin padrão {
+        box-sizing: content-box;
+        border: 2px solid #EBEBEB;
         border-radius: 50%;
         height: 22px;
         width: 5%;
         bottom: 56.07%;
-        border: 1px solid #ffffff;
         position: relative;
     }
 
-    h6 {
+    h2 {
+        position: relative;
+        display: flex;
+        left: 6%;
+        top: 5%;
+        @include text02;
+        font-size: 26px;
+        color: #202020;
+        width: 60%;
+    }
+
+    h1 {
         position: relative;
         display: flex;
         left: 6%;
@@ -56,92 +68,72 @@
         width: 50%;
     }
 
-    .valor {
-        left: 8%;
+    .prices {
+        left: 6%;
         top: 7%;
         position: relative;
-        @include text02;
-        font-size: 20px;
-        line-height: 163.42%;
-        width: 50%;
+        width: 40%;
         display: flex;
-        color: #686868;
+        color: #E35442;
+        align-items: center;
 
-        .text02 {
+
+        .list {
             position: relative;
-            left: -9px;
-            top: 0px;
             @include text01;
             font-size: 14px;
             line-height: 20px;
             display: flex;
-            align-items: center;
             text-decoration-line: line-through;
             color: #E35442;
+            margin-right: 3%;
+        }
+
+        .selling {
+            position: relative;
+            @include text02;
+            font-size: 20px;
+            line-height: 163.42%;
+            color: #686868;
+            margin-left: 3%;
         }
     }
 
-    .text03 {
-        position: relative;
-        top: 6.5%;
-        left: 5%;
-        font-size: 12px;
-        line-height: 18px;
-        display: flex;
-        @include text01;
-        width: 50%;
-    }
-
-    .color {
+    h3 {
         @include text01;
         font-size: 14px;
         line-height: 20px;
         display: flex;
         align-items: center;
-        color: #5F75AA;
         position: relative;
-        left: 7%;
+        left: 6%;
         top: 10%;
         display: flex;
         width: 20%;
 
-        p {
+        strong {
             position: relative;
-            left: -1%;
+            left: 5%;
             top: 0%;
-            width: 30%;
+            width: 10%;
+            color: #5F75AA;
         }
     }
 
-    .cores {
+    .colors {
         display: flex;
         position: relative;
-        left: 6%;
-        top: 0%;
-        width: 90%;
-        max-width: 100%;
+        top: 13%;
+        left: 5%;
 
-        .rosa {
-            background: #A9095E;
-            @include padrão;
-        }
 
-        .azul {
-            left: 2%;
-            background: #2A5A75;
+        .button-color {
+            display: flex;
             @include padrão;
-        }
 
-        .marron {
-            left: 4%;
-            background: #A14830;
-            @include padrão;
-        }
-
-        .preto {
-            left: 6%;
-            background: #000000;
-            @include padrão;
+            &:focus {
+                border: 2px solid #DE8F75;
+            }
         }
     }
 
@@ -196,7 +188,7 @@
 
             &:hover {
                 filter: brightness(0.9);
-
+                color: solid #DE8F75;
             }
         }
 

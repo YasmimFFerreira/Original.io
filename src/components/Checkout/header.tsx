@@ -1,8 +1,7 @@
 import xIcons from './../../assets/icons/x.svg';
 
-import React from 'react';
 import { Link } from 'react-router-dom';
-import './../../components/checkout/header.scss';
+import './header.scss';
 
 export function Header() {
     return (

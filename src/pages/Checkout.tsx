@@ -1,9 +1,9 @@
-import { Section } from '../components/checkout/section'
-import { Header } from '../components/checkout/header';
-import { Main } from '../components/checkout/main';
-import { Footer } from '../components/checkout/footer';
+import { Section } from '../components/Checkout/section'
+import { Header } from '../components/Checkout/header';
+import { Main } from '../components/Checkout/main';
+import { Footer } from '../components/Checkout/footer';
 
-import React from 'react';
+
 import '../styles/checkout.scss';
 
 export const Checkout = () => {

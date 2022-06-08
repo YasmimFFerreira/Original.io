@@ -1,27 +1,28 @@
-#home-footer {
+#footer {
     display: flex;
     position: absolute;
     width: 100%;
-    height: 49%;
-    top: 225%;
+    height: 18%;
+    top: 82%;
     left: 0%;
     border-top: 2px solid #AEB6C1;
 
+
     .ellipse {
-        height: 293px;
-        width: 293px;
+        height: 105%;
+        width: 23%;
         box-sizing: border-box;
         position: absolute;
         background: #FFFFFF;
         border: 2px solid #AEB6C1;
-        left: 956px;
+        left: 75%;
         display: inline-block;
         border-radius: 50%;
-        top: -104px;
+        top: -30%;
 
         P {
             position: relative;
-            top: 39px;
+            top: 22%;
             font-family: "Montserrat";
             font-size: 16px;
             font-weight: 700;
@@ -41,10 +42,10 @@
             color: rgba(32, 32, 32, 0.5);
             border-top: 2px solid #AEB6C1;
             position: relative;
-            left: 38px;
-            max-height: 216px;
-            width: 216px;
-            top: 90px;
+            left: 15%;
+            max-height: 70%;
+            width: 70%;
+            top: 36%;
         }
 
         .email {
@@ -57,17 +58,17 @@
             color: rgba(32, 32, 32, 0.5);
             border-top: 2px solid #AEB6C1;
             position: relative;
-            left: 38px;
-            max-height: 216px;
-            width: 216px;
-            top: 145px;
+            left: 15%;
+            max-height: 70%;
+            width: 70%;
+            top: 52%;
         }
 
         .enviar {
-            height: 51px;
-            width: 110px;
-            left: 90px;
-            top: 150px;
+            height: 16%;
+            width: 40%;
+            left: 30%;
+            top: 51%;
             position: relative;
             background: #DE8F75;
             border: 0px;
@@ -83,7 +84,7 @@
                 color: #FFFFFF;
                 text-align: center;
                 align-items: center;
-                left: 30px;
+                left: 30%;
                 position: relative;
             }
         }
@@ -93,53 +94,52 @@
     .faceb {
         position: absolute;
         display: flex;
-        height: 25px;
-        width: 12px;
-        left: 70px;
-        top: 30px;
-        height: 25px;
+        height: 10%;
+        width: 5%;
+        left: 5%;
+        top: 10%;
     }
 
     .insta {
         position: absolute;
         display: flex;
-        height: 25px;
-        width: 12px;
-        left: 100px;
-        top: 30px;
-        height: 25px;
+        height: 10%;
+        width: 5%;
+        left: 8%;
+        top: 10%;
     }
 
     .pint {
         position: absolute;
         display: flex;
-        height: 25px;
-        width: 12px;
-        left: 140px;
-        top: 30px;
-        height: 25px;
+        height: 10%;
+        width: 5%;
+        left: 12%;
+        top: 10%;
     }
 
     .vtex {
+        display: flex;
         position: relative;
-        height: 58px;
-        width: 92px;
-        left: 75px;
-        top: 100px;
+        height: 20%;
+        width: 10%;
+        left: 4%;
+        top: 30%;
     }
 
     .selo {
+        display: flex;
         position: relative;
-        height: 58px;
-        width: 54px;
-        left: 95px;
-        top: 100px;
+        height: 20%;
+        width: 10%;
+        left: 2%;
+        top: 30%;
     }
 
     .infos {
         position: absolute;
-        left: 275px;
-        top: 60px;
+        left: 20%;
+        top: 10%;
         word-spacing: 110px;
         font-family: 'Montserrat';
         font-style: normal;
@@ -154,8 +154,8 @@
 
     .info01 {
         position: absolute;
-        left: 275px;
-        top: 85px;
+        left: 20%;
+        top: 20%;
         display: inline;
         align-items: center;
         text-transform: uppercase;
@@ -168,8 +168,8 @@
 
     .info02 {
         position: absolute;
-        left: 510px;
-        top: 85px;
+        left: 38%;
+        top: 20%;
         display: inline;
         align-items: center;
         text-transform: uppercase;
@@ -182,8 +182,8 @@
 
     .info03 {
         position: absolute;
-        left: 735px;
-        top: 85px;
+        left: 56%;
+        top: 20%;
         display: inline;
         align-items: center;
         text-transform: uppercase;
@@ -197,7 +197,7 @@
     .rodape {
         position: absolute;
         display: flex;
-        top: 243px;
+        top: 80%;
         left: 0px;
         height: 20%;
         width: 100%;
@@ -213,12 +213,12 @@
         display: flex;
         align-items: center;
         text-align: center;
-        height: 60px;
+        height: 90%;
         color: #FFFFFF;
         word-wrap: break-word;
-        max-width: 680px;
+        max-width: 60%;
         position: relative;
-        left: 230px;
+        left: 20%;
         letter-spacing: 0.5px;
     }
 }

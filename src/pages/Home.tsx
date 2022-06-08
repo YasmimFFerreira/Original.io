@@ -1,20 +1,16 @@
-import { Header } from '../components/home/header'
-import { Aside } from '../components/home/aside';
-import { Article } from '../components/home/article';
-import { Menu } from '../components/home/menu';
-import { Footer } from '../components/home/footer';
+import { Header } from '../components/Header/header';
+import { Menu } from '../components/Menu/menu';
+import { Footer } from '../components/Footer/footer';
 
-import React from 'react';
 import '../styles/home.scss';
+import { Product } from './Product';
 
 export const Home = () => {
     return (
-
         <div id="page-home">
             <>
                 <Header />
-                <Aside />
-                <Article />
+                <Product />
                 <Menu />
                 <Footer />
             </>

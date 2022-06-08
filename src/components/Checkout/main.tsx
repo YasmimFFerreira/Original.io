@@ -5,8 +5,7 @@ import prod01Img from './../../assets/images/prod01.svg';
 import maisIcons from './../../assets/icons/mais.svg';
 import menosIcons from './../../assets/icons/menos.svg';
 
-import React from 'react';
-import './../../components/checkout/main.scss';
+import './main.scss';
 
 export function Main() {
     return (

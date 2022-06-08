@@ -1,7 +1,5 @@
-import React from 'react';
-
 import { Link } from 'react-router-dom';
-import './../../components/checkout/footer.scss';
+import './footer.scss';
 
 export function Footer() {
     return (

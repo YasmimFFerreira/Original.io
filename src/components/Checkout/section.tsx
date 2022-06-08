@@ -1,5 +1,4 @@
-import React from 'react';
-import './../../components/checkout/section.scss';
+import './section.scss';
 
 export function Section() {
     return (

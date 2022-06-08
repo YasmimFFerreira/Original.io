@@ -1,12 +1,13 @@
-import React from 'react';
-import { ProductProvider } from './context';
-import { AppRoutes } from './routes';
+import { ProductsContextProvider } from "./contexts/ProductsContext";
+import { AppRoutes } from "./routes";
+
+import './styles/global.scss';
 
 function App() {
   return (
-    <ProductProvider>
+    <ProductsContextProvider>
       <AppRoutes />
-    </ProductProvider>
+    </ProductsContextProvider>
   );
 }
 

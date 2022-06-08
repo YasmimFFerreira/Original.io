@@ -1,17 +1,43 @@
-import { Section } from '../components/product/section'
-import { Aside } from '../components/product/aside';
+import { InfoProduct } from '../components/Info/info';
+import { Aside } from "../components/Aside/aside";
+import { Header } from '../components/Header/header';
+import { Footer } from '../components/Footer/footer';
 
-import React from 'react';
 import '../styles/product.scss';
 
-export const Product = () => {
-    return (
+import { Product as ProductType } from '../types/products';
+import { useProducts } from '../contexts/ProductsContext';
+import { useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
+export const Product = () => {
+    const { id } = useParams();
+    const { products } = useProducts();
+
+    const [product, setProduct] = useState<ProductType>();
+    useEffect(() => {
+        console.log(id)
+        const foundProduct = products?.find(product => product.productId === id);
+        if (foundProduct) {
+            setProduct(foundProduct);
+        }
+    }, [id, products]);
+
+    if (!product) {
+        return (
+            <>
+                <h2> Produto não encontrado </h2>
+            </>
+        )
+    }
+    return (
         <div id="page-product">
             <>
-                <Section />
+                <Header />
+                <InfoProduct product={product} />
                 <Aside />
+                <Footer />
             </>
         </div>
-    )
-};
+    );
+}
