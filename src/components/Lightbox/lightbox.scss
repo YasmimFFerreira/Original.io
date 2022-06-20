@@ -1,13 +1,15 @@
 #lightbox {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
     height: 100%;
     width: 100%;
-    z-index: 10;
-    background: #272525;
-
+    background: #797272;
 
     .box {
         position: absolute;
@@ -83,7 +85,7 @@
                 color: #ffffff;
                 position: relative;
                 left: 90px;
-                top: 15px;
+                top: 10px;
                 text-decoration: none;
             }
         }

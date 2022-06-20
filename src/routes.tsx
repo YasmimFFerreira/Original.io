@@ -2,7 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Home } from "./pages/Home";
 import { Product } from "./pages/Product";
-import { Checkout } from "./pages/Checkout";
+import { Checkout } from "./components/Checkout/checkout"
+import { Lightbox } from "./components/Lightbox/lightbox";
 
 export const AppRoutes = () => {
 
@@ -10,8 +11,9 @@ export const AppRoutes = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/product/:id" element={<Product />} />
-                <Route path="/checkout/" element={<Checkout />} />
+                <Route path="/:id" element={<Product />} />
+                <Route path="/lightbox/" element={<Lightbox />} />
+                <Route path="/checkout/" element={<Checkout product={undefined} />} />
             </Routes>
         </BrowserRouter>
     )

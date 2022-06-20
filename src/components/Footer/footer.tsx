@@ -8,20 +8,15 @@ import './footer.scss';
 
 export function Footer() {
     return (
-
         <div id="footer">
+
             <div className="ellipse">
 
-                <p>
-                    ASSINE NOSSA NEWS
-                </p>
+                <p>ASSINE NOSSA NEWS</p>
 
-                <div className="nome">
-                    Nome
-                </div>
-                <div className="email">
-                    E-mail
-                </div>
+                <div className="nome"> Nome </div>
+
+                <div className="email"> E-mail </div>
 
                 <button className="enviar">
                     <div className="env">
@@ -49,6 +44,7 @@ export function Footer() {
             <div className="infos">
                 INSTITUCIONAL  INFORMAÇÕES  CONHEÇA
             </div>
+
             <div className="info01">
                 <p>A Marca</p>
                 <p>Lojas</p>
@@ -66,12 +62,14 @@ export function Footer() {
                 <p>Trabalhe com a Gente</p>
                 <p>Procon-RJ</p>
             </div>
+
             <div className="rodape">
                 <h5>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie massa in nunc condimentum, vel placerat
                     lacus pulvinar. Suspendisse vel nisl eu tortor feugiat tempus vel in tortor. Nunc semper leo nec tellus gravida faucibus.
                 </h5>
             </div>
+
         </div>
     )
 };

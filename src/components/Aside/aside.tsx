@@ -1,54 +1,46 @@
-import prod02Img from './../../assets/images/prod02.svg'
-import seta4Icons from './../../assets/icons/seta4.svg';
-import videoIcons from './../../assets/icons/video.svg';
-import seta1Icons from './../../assets/icons/seta1.svg';
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
+import { useEffect, useState } from 'react';
+import { useProducts } from '../../contexts/ProductsContext';
+import { Image } from '../../types/products';
 
 import './aside.scss';
 
 export function Aside() {
+    const { selectedItem } = useProducts();
+    const [images, setImages] = useState<Image[] | []>([])
+    const [selectedImage, setSelectedImage] = useState<Image>()
+
+    useEffect(() => {
+        const newImages = selectedItem?.images
+
+        if (newImages) {
+            setImages(newImages);
+            setSelectedImage(newImages[0])
+        }
+    }, [selectedItem])
+
     return (
         <div id="aside">
 
             <div className="home">
                 Home /
                 <div className="home02">
-                    Sapatos
+                    Produto
                 </div>
-            </div>
-
-            <div className="text02">
-                Vídeo
             </div>
 
             <div className="container">
-                <div className="img02">
-                    <img src={prod02Img} alt="Ilustração rasteira" />
-                </div>
-                <div className="play">
-                    <img src={videoIcons} alt="play video" />
-                </div>
-                <div className="seta1">
-                    <img src={seta1Icons} alt="Ilustração seta subir" />
-                </div>
-                <div className="img03">
-                    <img src={prod02Img} alt="Ilustração rasteira" />
-                </div>
-                <div className="img01">
-                    <img src={prod02Img} alt="Ilustração rasteira" />
-                </div>
-                <div className="img01">
-                    <img src={prod02Img} alt="Ilustração rasteira" />
-                </div>
-                <div className="img01">
-                    <img src={prod02Img} alt="Ilustração rasteira" />
-                </div>
-                <div className="seta4">
-                    <img src={seta4Icons} alt="Ilustração seta subir" />
-                </div>
+                <MdKeyboardArrowUp size={24} />
+                {images.map((image) => (
+                    <img src={image.imageUrl} alt={image.imageText} onClick={() => setSelectedImage(image)} />
+                ))}
+                <MdKeyboardArrowDown size={24} />
             </div >
+
             <main>
-                <img src={prod02Img} alt="Ilustração rasteira" />
+                <img src={selectedImage?.imageUrl} alt={selectedImage?.imageText} />
             </main>
+
         </div>
     )
 };

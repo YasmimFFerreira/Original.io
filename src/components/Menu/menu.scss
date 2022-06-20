@@ -2,7 +2,8 @@
     height: 35%;
     width: 95%;
     left: 2%;
-    top: 40%;
+    top: 41%;
+    max-height: 35%;
     position: absolute;
     display: flex;
 
@@ -13,94 +14,61 @@
         color: #252525;
     }
 
-    @mixin padrão02 {
-        border-radius: 50%;
-        height: 4%;
-        width: 7%;
-        bottom: 56.07%;
-        border: 0px;
-        position: relative;
-    }
-
-    @mixin padrãoImg {
-        position: relative;
-        margin-left: 10px;
-        top: 7%;
-        left: -1%;
-        height: 70%;
-        width: 60%;
-    }
-
     h1 {
         @include text01;
         font-size: 26px;
         text-transform: uppercase;
         position: absolute;
         top: 0%;
-        left: 37%;
+        left: 36%;
         color: #DE8F75;
         display: flex;
         width: 30%;
-        height: 10%;
+        height: 8%;
     }
 
-    p {
+
+    .products {
         display: flex;
-        text-decoration: none;
-        @include text01;
-    }
-
-    .cores02 {
-        display: inline;
         flex-direction: row;
-        position: relative;
-        left: 130%;
-        top: 51%;
+        position: absolute;
+        top: 8%;
+        left: 0%;
+        width: 100%;
+        height: 82%;
 
-        .rosa {
-            background: #A9095E;
-            @include padrão02;
+        a {
+            position: relative;
+            align-items: center;
+            height: 100%;
+            width: 80%;
+
+            .image {
+                position: relative;
+                display: flex;
+                height: 88%;
+                width: 88%;
+                left: 6%;
+            }
+
+            h2 {
+                display: flex;
+                text-decoration: none;
+                font-size: 17px;
+                width: 130px;
+                align-items: center;
+                text-align: center;
+                position: relative;
+                left: 35%;
+                @include text01;
+            }
         }
-
-        .azul {
-            left: 2px;
-            background: #2A5A75;
-            @include padrão02;
-        }
-
-        .marron {
-            left: 4px;
-            background: #A14830;
-            @include padrão02;
-        }
-
-        .preto {
-            left: 8px;
-            background: #000000;
-            @include padrão02;
-        }
     }
 
-    .img3 {
-        @include padrãoImg;
-    }
-
-    .img2 {
-        @include padrãoImg;
-    }
-
-    .img1 {
-        @include padrãoImg;
-    }
-
-    .img4 {
-        @include padrãoImg;
-    }
-
-    h2 {
+    h3 {
         height: 35px;
         width: 10%;
-        left: -65%;
+        left: 25%;
         top: 92%;
         position: relative;
         display: flex;
@@ -130,10 +98,10 @@
         color: #2A5A75;
     }
 
-    h3 {
+    h5 {
         height: 35px;
         width: 10%;
-        left: -40%;
+        left: 60%;
         top: 92%;
         position: relative;
         display: flex;

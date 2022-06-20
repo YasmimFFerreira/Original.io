@@ -1,14 +1,14 @@
 import { InfoProduct } from '../components/Info/info';
 import { Aside } from "../components/Aside/aside";
 import { Header } from '../components/Header/header';
+import { Menu } from '../components/Menu/menu';
 import { Footer } from '../components/Footer/footer';
-
-import '../styles/product.scss';
-
 import { Product as ProductType } from '../types/products';
 import { useProducts } from '../contexts/ProductsContext';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+
+import '../styles/product.scss';
 
 export const Product = () => {
     const { id } = useParams();
@@ -34,8 +34,9 @@ export const Product = () => {
         <div id="page-product">
             <>
                 <Header />
-                <InfoProduct product={product} />
                 <Aside />
+                <InfoProduct product={product} />
+                <Menu />
                 <Footer />
             </>
         </div>

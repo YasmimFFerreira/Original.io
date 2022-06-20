@@ -6,15 +6,14 @@ import './header.scss';
 
 export function Header() {
     return (
-
         <div id="header">
+
             <div className="logo">
                 <img src={logoImg} alt="logo original.io" />
             </div>
 
             <nav>
                 <div className="acess"> Entrar | Cadastrar-se</div>
-
                 <div className="items">SAPATOS  BOLSAS  ACESSÓRIOS  OFF</div>
 
                 <div className="search">
@@ -26,6 +25,7 @@ export function Header() {
                     <img src={sacolaIcons} alt="Ilustração sacola" />
                 </div>
             </nav>
+
         </div>
     )
 };

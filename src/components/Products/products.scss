@@ -1,0 +1,43 @@
+#products {
+    height: 30%;
+    width: 95%;
+    left: 2%;
+    top: 10%;
+    max-height: 35%;
+    position: absolute;
+    display: flex;
+
+    @mixin text01 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        color: #252525;
+    }
+
+    a {
+        position: relative;
+        align-items: center;
+        height: 100%;
+        width: 80%;
+
+        .image {
+            position: relative;
+            display: flex;
+            height: 88%;
+            width: 88%;
+            left: 6%;
+        }
+
+        h2 {
+            display: flex;
+            text-decoration: none;
+            font-size: 17px;
+            width: 130px;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            left: 35%;
+            @include text01;
+        }
+    }
+}

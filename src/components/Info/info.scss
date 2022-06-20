@@ -1,9 +1,9 @@
 #info {
     flex-direction: column;
-    height: 40%;
+    height: 27%;
     width: 38%;
     left: 55%;
-    top: 11%;
+    top: 12%;
     position: relative;
     display: flex;
     border: 2px solid #D2E1DF;
@@ -111,7 +111,7 @@
         display: flex;
         width: 20%;
 
-        strong {
+        p {
             position: relative;
             left: 5%;
             top: 0%;
@@ -123,11 +123,11 @@
     .colors {
         display: flex;
         position: relative;
-        top: 13%;
+        top: 18%;
         left: 5%;
 
 
-        .button-color {
+        .selectedcolors {
             display: flex;
             @include padrão;
 
@@ -182,13 +182,15 @@
             position: relative;
             height: 38px;
             width: 9%;
-            background: #FFFFFF;
             border: 1px solid #EBEBEB;
             border-radius: 2px;
 
             &:hover {
                 filter: brightness(0.9);
-                color: solid #DE8F75;
+            }
+
+            &:focus {
+                background-color: #DE8F75 !important;
             }
         }
 
@@ -231,10 +233,10 @@
             font-size: 18px;
             line-height: 26px;
             display: flex;
-            top: 15px;
+            top: 4%;
             text-transform: uppercase;
             color: #FFFFFF;
-            left: 110px;
+            left: 25%;
         }
     }
 

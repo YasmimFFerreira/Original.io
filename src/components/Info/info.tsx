@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Item, Product } from "../../types/products";
+import { useProducts } from '../../contexts/ProductsContext';
+import { Link } from 'react-router-dom';
 
 import './info.scss';
-import { Lightbox } from '../Lightbox';
-
 interface InfoProductProps {
     product: Product | undefined;
 }
@@ -18,12 +18,16 @@ interface ColorVariationType {
     color: string;
 }
 
+interface SizeVariationType {
+    name: string;
+}
+
 const SELLER_ID = "1"
 
 const COLORS = [
     {
         name: "Amarelo",
-        hex: "#ffc4on"
+        hex: "#faec2a"
     },
     {
         name: "Branco",
@@ -35,12 +39,8 @@ const COLORS = [
     }
 ]
 
-interface SizeVariationType {
-    name: string;
-}
-
 export function InfoProduct({ product }: InfoProductProps) {
-
+    const { updateSelectedItem } = useProducts()
     const [selectedItem, setSelectedItem] = useState<Item>();
     const [priceValues, setPriceValues] = useState<PriceValuesType>({
         sellingPrice: 0,
@@ -50,13 +50,12 @@ export function InfoProduct({ product }: InfoProductProps) {
     const [colorSelected, setColorSelected] = useState<string>(" ");
     const [sizeVariation, setSizeVariation] = useState<SizeVariationType[] | []>([]);
     const [sizeSelected, setSizeSelected] = useState<string>(" ");
-    const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
         const item = product?.items[0]
-
         if (item) {
             setSelectedItem(item);
+            updateSelectedItem(item);
         }
     }, [])
 
@@ -76,6 +75,10 @@ export function InfoProduct({ product }: InfoProductProps) {
 
     useEffect(() => {
         getPriceValues();
+
+        if (selectedItem) {
+            updateSelectedItem(selectedItem);
+        }
     }, [selectedItem])
 
 
@@ -119,88 +122,78 @@ export function InfoProduct({ product }: InfoProductProps) {
         }
     }
 
-    function handleOpen() {
-        setIsVisible(true)
-    }
-
-    function handleClose() {
-        setIsVisible(false)
-    }
-
     useEffect(() => {
+        console.log(product)
         getColors();
         getSizes();
     }, [product]);
 
 
     return (
-        <>
-            <div id="info">
+        <div id="info">
 
-                <h1>{product?.productName}</h1>
+            <h1>{product?.productName}</h1>
 
-                <p>{product?.productReference}</p>
+            <p>{product?.productReference}</p>
 
-                <div className="prices">
-                    <div className="list">
-                        R$ {priceValues.listPrice}
-                    </div>
-                    |
-                    <div className="selling">
-                        R$ {priceValues.sellingPrice}
-                    </div>
+            <div className="prices">
+                <div className="list">
+                    R$ {priceValues.listPrice}
                 </div>
-
-                <h3>
-                    Cor:
-                    <strong>{colorSelected}</strong>
-                </h3>
-
-                {colorVariation.length > 0 && (
-                    <div className="colors">
-                        {colorVariation.map((variation) => (
-                            <button
-                                className="button-color"
-                                onClick={() => handleSelectedItem(variation)}
-                                key={variation.name}
-                                style={{
-                                    backgroundColor: variation.color
-                                }}></button>
-                        ))}
-                    </div>
-                )}
-
-                <div className="tam">
-                    <p>Tamanho:</p>
-                    ({sizeSelected})
+                |
+                <div className="selling">
+                    R$ {priceValues.sellingPrice}
                 </div>
-
-                <div className="text02">
-                    Guia de medidas
-                </div>
-
-                {sizeVariation.length > 0 && (
-                    <div className="num">
-                        {sizeVariation.map((variation => (
-                            <button
-                                onClick={() => setSizeSelected(variation.name)}
-                                key={variation.name}
-                            >
-                                {variation.name}
-                            </button>
-                        )))}
-                    </div>)}
-
-                <button className="compra"
-                    onClick={handleOpen}>
-                    <p> ADICIONAR Á SACOLA</p>
-                </button>
-
-                <div className="text04">{product?.description}</div>
             </div>
 
-            <Lightbox isVisible={isVisible} close={handleClose} />
-        </>
+            <h3>
+                Cor: <p>({colorSelected})</p>
+            </h3>
+
+            {colorVariation.length > 0 && (
+                <div className="colors">
+                    {colorVariation.map((variation) => (
+                        <button className="selectedcolors"
+                            onClick={() => handleSelectedItem(variation)}
+                            key={variation.name}
+                            style={{
+                                backgroundColor: variation.color
+                            }}
+                        >
+                        </button>
+                    ))}
+                </div>)}
+
+            <div className="tam">
+                <p>Tamanho:</p>
+                ({sizeSelected})
+            </div>
+
+            <div className="text02">
+                Guia de medidas
+            </div>
+
+            {sizeVariation.length > 0 && (
+                <div className="num">
+                    {sizeVariation.map((variation => (
+                        <button
+                            onClick={() => setSizeSelected(variation.name)}
+                            key={variation.name}
+                        >
+                            {variation.name}
+                        </button>
+                    )))}
+                </div>)}
+
+            <Link className="compra" to={'/lightbox'}>
+                <p> ADICIONAR Á SACOLA</p>
+            </Link>
+
+            <div className="text04">
+                {product?.description}
+            </div>
+
+        </div>
     );
 }
 
