@@ -1,48 +1,44 @@
 import xIcons from './../../assets/icons/x.svg';
-import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useProducts } from '../../contexts/ProductsContext';
-import { Image } from '../../types/products';
+import { Item } from '../../types/products';
 
 import "./lightbox.scss";
 
-export function Lightbox() {
-    const { selectedItem } = useProducts();
-    const [, setImages] = useState<Image[] | []>([]);
-    const [selectedImage, setSelectedImage] = useState<Image>()
+import { Sacola } from '../Sacola/sacola';
 
-    useEffect(() => {
-        const newImages = selectedItem?.images
+interface LightBoxProps {
+    isVisible: boolean;
+    close: () => void;
+    item: Item,
+}
 
-        if (newImages) {
-            setImages(newImages);
-            setSelectedImage(newImages[0])
-        }
-    }, [selectedItem])
+export function Lightbox({ isVisible, close, item }: LightBoxProps) {
 
     return (
-        <div id="lightbox">
+        <div id="lightbox" style={{ visibility: isVisible ? 'visible' : 'hidden' }}>
+
             <div className="box">
 
-                <Link className="close" to={'/'} key="">
+                <button className="close" onClick={close}>
                     <img src={xIcons} alt="Ilustração fechar" />
-                </Link>
+                </button>
+
                 <div className="img01">
-                    <img src={selectedImage?.imageUrl} alt={selectedImage?.imageText} />
+                    <img src={item.images[0].imageUrl} />
                 </div>
 
                 <p> Produto adicionado com sucesso! </p>
 
-                <Link className="compra" to={'/checkout'} >
+                <button className="compra" onClick={Sacola}>
                     <p>FINALIZAR COMPRA</p>
-                </Link>
+                </button>
 
-                <Link className="continuar" to={'/'} >
+                <Link className="continuar" to={'/'}>
                     Continuar Comprando
                 </Link>
-
             </div>
         </div>
     );
 }
+
 

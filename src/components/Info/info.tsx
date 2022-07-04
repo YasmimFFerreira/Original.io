@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Item, Product } from "../../types/products";
+import { Item, Product, Value } from "../../types/products";
 import { useProducts } from '../../contexts/ProductsContext';
-import { Link } from 'react-router-dom';
+import { Lightbox } from '../Lightbox/lightbox';
 
 import './info.scss';
 interface InfoProductProps {
@@ -41,6 +41,7 @@ const COLORS = [
 
 export function InfoProduct({ product }: InfoProductProps) {
     const { updateSelectedItem } = useProducts()
+    const [isVisible, setIsVisible] = useState(false);
     const [selectedItem, setSelectedItem] = useState<Item>();
     const [priceValues, setPriceValues] = useState<PriceValuesType>({
         sellingPrice: 0,
@@ -81,6 +82,7 @@ export function InfoProduct({ product }: InfoProductProps) {
         }
     }, [selectedItem])
 
+    console.log(selectedItem)
 
     function getColors() {
         const colorSpecification = product?.skuSpecifications.find(specification => specification.field.name === "Cor");
@@ -127,6 +129,15 @@ export function InfoProduct({ product }: InfoProductProps) {
         getColors();
         getSizes();
     }, [product]);
+
+    function handleOpen() {
+        setIsVisible(true)
+    }
+
+    function handleClose() {
+        setIsVisible(false)
+    }
+
 
 
     return (
@@ -185,13 +196,15 @@ export function InfoProduct({ product }: InfoProductProps) {
                     )))}
                 </div>)}
 
-            <Link className="compra" to={'/lightbox'}>
+            <button className="compra" onClick={handleOpen}>
                 <p> ADICIONAR Á SACOLA</p>
-            </Link>
+            </button>
 
             <div className="text04">
                 {product?.description}
             </div>
+
+            {selectedItem && <Lightbox isVisible={isVisible} close={handleClose} item={selectedItem} />}
 
         </div>
     );

@@ -4,7 +4,7 @@
             "cacheId": "camisa-original-copy-3-",
             "productId": "1",
             "description": "Descriçao sobre o produto , sobre suas qualidades e  detalhes do produto.",
-            "productName": "Camisa Original Blusao",
+            "productName": "Camisa Blusao",
             "productReference": "7546765",
             "linkText": "camisa-original-copy-3-",
             "brand": "Original",
@@ -169,7 +169,7 @@
                             "imageId": "155495",
                             "imageLabel": "frente",
                             "imageTag": "<img src=\"~/arquivos/ids/155495-#width#-#height#/camisa.jpg?v=636864759007670000\" width=\"#width#\" height=\"#height#\" alt=\"modelo-teste1\" id=\"\" />",
-                            "imageUrl": "https://original.vtexassets.com/arquivos/ids/155495/camisa.jpg?v=636864759007670000",
+                            "imageUrl": "https://images.unsplash.com/photo-1623113562225-694f6a2ee75e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
                             "imageText": "modelo-teste1",
                             "__typename": "Image"
                         },
@@ -178,7 +178,7 @@
                             "imageId": "155496",
                             "imageLabel": "frente",
                             "imageTag": "<img src=\"~/arquivos/ids/155496-#width#-#height#/camisa1.jpg?v=636864759213700000\" width=\"#width#\" height=\"#height#\" alt=\"modelo-teste2\" id=\"\" />",
-                            "imageUrl": "https://original.vtexassets.com/arquivos/ids/155496/camisa1.jpg?v=636864759213700000",
+                            "imageUrl": "https://images.unsplash.com/photo-1522706604291-210a56c3b376?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
                             "imageText": "modelo-teste2",
                             "__typename": "Image"
                         },
@@ -187,7 +187,7 @@
                             "imageId": "155497",
                             "imageLabel": "frente",
                             "imageTag": "<img src=\"~/arquivos/ids/155497-#width#-#height#/camisa2.jpg?v=636864759600900000\" width=\"#width#\" height=\"#height#\" alt=\"modelo-teste3\" id=\"\" />",
-                            "imageUrl": "https://original.vtexassets.com/arquivos/ids/155497/camisa2.jpg?v=636864759600900000",
+                            "imageUrl": "https://images.unsplash.com/photo-1616006897093-5e4635c0de35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
                             "imageText": "modelo-teste3",
                             "__typename": "Image"
                         }
@@ -337,7 +337,7 @@
                             "imageId": "155498",
                             "imageLabel": "frente",
                             "imageTag": "<img src=\"~/arquivos/ids/155498-#width#-#height#/camisa1.jpg?v=636864769703600000\" width=\"#width#\" height=\"#height#\" alt=\"modelo-teste1\" id=\"\" />",
-                            "imageUrl": "https://original.vtexassets.com/arquivos/ids/155498/camisa1.jpg?v=636864769703600000",
+                            "imageUrl": "https://images.unsplash.com/photo-1583744946564-b52ac1c389c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
                             "imageText": "modelo-teste1",
                             "__typename": "Image"
                         },
@@ -346,7 +346,7 @@
                             "imageId": "155499",
                             "imageLabel": "frente",
                             "imageTag": "<img src=\"~/arquivos/ids/155499-#width#-#height#/camisa2.jpg?v=636864769906600000\" width=\"#width#\" height=\"#height#\" alt=\"modelo-teste2\" id=\"\" />",
-                            "imageUrl": "https://original.vtexassets.com/arquivos/ids/155499/camisa2.jpg?v=636864769906600000",
+                            "imageUrl": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
                             "imageText": "modelo-teste2",
                             "__typename": "Image"
                         }
@@ -483,7 +483,7 @@
                             "imageId": "155500",
                             "imageLabel": "frente",
                             "imageTag": "<img src=\"~/arquivos/ids/155500-#width#-#height#/camisa2.jpg?v=636864770895100000\" width=\"#width#\" height=\"#height#\" alt=\"modelo-teste1\" id=\"\" />",
-                            "imageUrl": "https://original.vtexassets.com/arquivos/ids/155500/camisa2.jpg?v=636864770895100000",
+                            "imageUrl": "https://images.unsplash.com/photo-1612031284014-373f1ef87b16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
                             "imageText": "modelo-teste1",
                             "__typename": "Image"
                         },
@@ -492,7 +492,7 @@
                             "imageId": "155501",
                             "imageLabel": "frente",
                             "imageTag": "<img src=\"~/arquivos/ids/155501-#width#-#height#/camisa.jpg?v=636864771439670000\" width=\"#width#\" height=\"#height#\" alt=\"modelo-teste2\" id=\"\" />",
-                            "imageUrl": "https://original.vtexassets.com/arquivos/ids/155501/camisa.jpg?v=636864771439670000",
+                            "imageUrl": "https://images.unsplash.com/photo-1612031284354-28d25b6c4620?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
                             "imageText": "modelo-teste2",
                             "__typename": "Image"
                         },
@@ -501,7 +501,7 @@
                             "imageId": "155502",
                             "imageLabel": "frente",
                             "imageTag": "<img src=\"~/arquivos/ids/155502-#width#-#height#/camisa1.jpg?v=636864771598330000\" width=\"#width#\" height=\"#height#\" alt=\"modelo-teste3\" id=\"\" />",
-                            "imageUrl": "https://original.vtexassets.com/arquivos/ids/155502/camisa1.jpg?v=636864771598330000",
+                            "imageUrl": "https://images.unsplash.com/photo-1612031284862-c173a472fba0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
                             "imageText": "modelo-teste3",
                             "__typename": "Image"
                         }
@@ -767,7 +767,7 @@
                             "imageId": "155510",
                             "imageLabel": "frente",
                             "imageTag": "<img src=\"~/arquivos/ids/155510-#width#-#height#/blusa.jpg?v=636865345462400000\" width=\"#width#\" height=\"#height#\" alt=\"modelo-teste1\" id=\"\" />",
-                            "imageUrl": "https://original.vtexassets.com/arquivos/ids/155510/blusa.jpg?v=636865345462400000",
+                            "imageUrl": "https://images.unsplash.com/photo-1614881997853-b82f0e42414b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
                             "imageText": "modelo-teste1",
                             "__typename": "Image"
                         },
@@ -776,7 +776,7 @@
                             "imageId": "155511",
                             "imageLabel": "frente",
                             "imageTag": "<img src=\"~/arquivos/ids/155511-#width#-#height#/blusa1.jpg?v=636865345809330000\" width=\"#width#\" height=\"#height#\" alt=\"modelo-teste2\" id=\"\" />",
-                            "imageUrl": "https://original.vtexassets.com/arquivos/ids/155511/blusa1.jpg?v=636865345809330000",
+                            "imageUrl": "https://images.unsplash.com/photo-1614725078749-29c421fd0e51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
                             "imageText": "modelo-teste2",
                             "__typename": "Image"
                         }
@@ -913,7 +913,7 @@
                             "imageId": "155512",
                             "imageLabel": "frente",
                             "imageTag": "<img src=\"~/arquivos/ids/155512-#width#-#height#/blusa2.jpg?v=636865346303370000\" width=\"#width#\" height=\"#height#\" alt=\"modelo-teste2\" id=\"\" />",
-                            "imageUrl": "https://original.vtexassets.com/arquivos/ids/155512/blusa2.jpg?v=636865346303370000",
+                            "imageUrl": "https://images.unsplash.com/photo-1506795660198-e95c77602129?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
                             "imageText": "modelo-teste2",
                             "__typename": "Image"
                         },
@@ -922,7 +922,7 @@
                             "imageId": "155515",
                             "imageLabel": "frente",
                             "imageTag": "<img src=\"~/arquivos/ids/155515-#width#-#height#/blusa1.jpg?v=636865347299670000\" width=\"#width#\" height=\"#height#\" alt=\"modelo-teste3\" id=\"\" />",
-                            "imageUrl": "https://original.vtexassets.com/arquivos/ids/155515/blusa1.jpg?v=636865347299670000",
+                            "imageUrl": "https://images.unsplash.com/photo-1599699542859-6865fdd2907a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
                             "imageText": "modelo-teste3",
                             "__typename": "Image"
                         }
@@ -1059,7 +1059,7 @@
                             "imageId": "155513",
                             "imageLabel": "frente",
                             "imageTag": "<img src=\"~/arquivos/ids/155513-#width#-#height#/blusa.jpg?v=636865346688800000\" width=\"#width#\" height=\"#height#\" alt=\"modelo-teste1\" id=\"\" />",
-                            "imageUrl": "https://original.vtexassets.com/arquivos/ids/155513/blusa.jpg?v=636865346688800000",
+                            "imageUrl": "https://images.unsplash.com/photo-1630643583573-c68623718072?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
                             "imageText": "modelo-teste1",
                             "__typename": "Image"
                         },
@@ -1068,7 +1068,7 @@
                             "imageId": "155514",
                             "imageLabel": "frente",
                             "imageTag": "<img src=\"~/arquivos/ids/155514-#width#-#height#/blusa1.jpg?v=636865346816300000\" width=\"#width#\" height=\"#height#\" alt=\"modelo-teste2\" id=\"\" />",
-                            "imageUrl": "https://original.vtexassets.com/arquivos/ids/155514/blusa1.jpg?v=636865346816300000",
+                            "imageUrl": "https://images.unsplash.com/photo-1571666274590-f8cc87006500?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
                             "imageText": "modelo-teste2",
                             "__typename": "Image"
                         }
@@ -1174,7 +1174,7 @@
             "cacheId": "terno",
             "productId": "3",
             "description": "",
-            "productName": "terno",
+            "productName": "Terno",
             "productReference": "9992",
             "linkText": "terno",
             "brand": "Original",
@@ -1303,7 +1303,7 @@
                             "imageId": "155667",
                             "imageLabel": "ternocostas",
                             "imageTag": "<img src=\"~/arquivos/ids/155667-#width#-#height#/ricardo_almeida_4490_fc_2216_baixa.jpg?v=637233367826900000\" width=\"#width#\" height=\"#height#\" alt=\"terno-frente\" id=\"\" />",
-                            "imageUrl": "https://original.vtexassets.com/arquivos/ids/155667/ricardo_almeida_4490_fc_2216_baixa.jpg?v=637233367826900000",
+                            "imageUrl": "https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
                             "imageText": "terno-frente",
                             "__typename": "Image"
                         },
@@ -1312,7 +1312,7 @@
                             "imageId": "155668",
                             "imageLabel": "ternocostas",
                             "imageTag": "<img src=\"~/arquivos/ids/155668-#width#-#height#/ricardo_almeida_4490_fc_2217_baixa.jpg?v=637233368110570000\" width=\"#width#\" height=\"#height#\" alt=\"terno-costas\" id=\"\" />",
-                            "imageUrl": "https://original.vtexassets.com/arquivos/ids/155668/ricardo_almeida_4490_fc_2217_baixa.jpg?v=637233368110570000",
+                            "imageUrl": "https://images.unsplash.com/photo-1618886614638-80e3c103d31a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=370&q=80",
                             "imageText": "terno-costas",
                             "__typename": "Image"
                         }

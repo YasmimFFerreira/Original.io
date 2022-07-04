@@ -1,0 +1,16 @@
+#sacola {
+    display: flex;
+    position: relative;
+    width: 5%;
+    height: 9%;
+    top: 0%;
+    left: -95%;
+    border: solid #424242;
+
+    .bag {
+        position: relative;
+        display: flex;
+        height: 50%;
+        width: 50%;
+    }
+}

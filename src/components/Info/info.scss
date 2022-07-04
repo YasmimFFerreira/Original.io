@@ -1,6 +1,6 @@
 #info {
     flex-direction: column;
-    height: 27%;
+    height: 29%;
     width: 38%;
     left: 55%;
     top: 12%;
@@ -28,7 +28,7 @@
         border: 2px solid #EBEBEB;
         border-radius: 50%;
         height: 22px;
-        width: 5%;
+        width: 10%;
         bottom: 56.07%;
         position: relative;
     }
@@ -104,7 +104,6 @@
         font-size: 14px;
         line-height: 20px;
         display: flex;
-        align-items: center;
         position: relative;
         left: 6%;
         top: 10%;
@@ -112,10 +111,11 @@
         width: 20%;
 
         p {
+            height: 100%;
             position: relative;
             left: 5%;
             top: 0%;
-            width: 10%;
+            width: 100%;
             color: #5F75AA;
         }
     }
@@ -123,9 +123,9 @@
     .colors {
         display: flex;
         position: relative;
+        width: 50%;
         top: 18%;
         left: 5%;
-
 
         .selectedcolors {
             display: flex;
